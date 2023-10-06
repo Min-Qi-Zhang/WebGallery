@@ -1,0 +1,100 @@
+html {overflow: -moz-scrollbars-vertical;}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  margin: auto;
+}
+
+header {
+  text-align: left;
+  padding: 20px 40px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  vertical-align: baseline;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+}
+
+#icon {
+  width: 30px;
+  height: 30px;
+  background-image: url("../media/gallery-icon.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  margin: 0px 10px;
+}
+
+#title {
+  background: -webkit-linear-gradient(#04bdff, #555eff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration:none;
+  font-size: 35px;
+}
+
+footer {
+  margin-top: 50px;
+  padding: 20px 40px;
+  box-shadow: 0px -5px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+#error_box {
+  visibility: hidden;
+  background-color: lightcoral;
+  border: 1px solid red;
+  padding: 15px;
+  margin: 10px 100px;
+  border-radius: 5px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.left-header {
+  margin-left: auto;
+  flex-direction: row;
+  display: flex;
+}
+
+#signout_button {
+  cursor: pointer;
+  align-self: center;
+  text-decoration:none;
+  font-size: 20px;
+  color: #555eff;
+}
+
+#salutation {
+  align-self: center;
+  font-size: 16px;
+  color: #555eff;
+  margin: 0px 20px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery {
+  cursor: pointer;
+  padding: 15px;
+  border: 2px solid #04bdff;
+  color: #04bdff;
+  margin: 5px;
+  font-size: 16px;
+}
+
+.gallery-arrow {
+  cursor: pointer;
+  padding: 0px 20px;
+  font-size: 16px;
+  font-weight: bold;
+}

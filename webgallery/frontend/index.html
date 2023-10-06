@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Web Gallery</title>
+  <link href="style/main.css" rel="stylesheet" type="text/css"/>
+  <link href="style/form.css" rel="stylesheet" type="text/css"/>
+  <link href="style/gallery.css" rel="stylesheet" type="text/css"/>
+  <link href="style/comment.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+  <header>
+    <div id="icon"></div>
+    <a href="/" id="title">Web Gallery</a>
+    <div class="left-header">
+      <div id="salutation" class="hidden">Hello!</div>
+      <div id="signout_button" class="header_btn hidden">Sign Out</div>
+    </div>
+  </header>
+
+  <div id="error_box"></div>
+
+  <form id="signup-signin-form">
+    <div class="form-group">
+      <lable for="username">Username</lable>
+      <input class="form-input" type="text" placeholder="Enter username" name="username" required />
+    </div>
+
+    <div class="form-group">
+      <lable for="password">Password</lable>
+      <input class="form-input" type="password" placeholder="Enter password" name="password" required />
+    </div>
+
+    <button id="signup" name="action" class="btn">Sign Up</button>
+    <button id="signin" name="action" class="btn">Sign In</button>
+  </form>
+
+  <div id="gallery-list" class="row"></div>
+  <div id="gallery-arrows" class="row">
+    <div id="prev-gallery" class="gallery-arrow">< Prev</div>
+    <div id="next-gallery" class="gallery-arrow">Next ></div>
+  </div>
+
+  <button class="btn" id="show-hide-btn">Show Add Image Form</button>
+  <form id="add-img-form">
+    <div class="form-group">
+      <label for="img-title">Image Title</label>
+      <input class="form-input" type="text" placeholder="Enter image title" name="img-title" id="img-title" required />
+    </div>
+    
+    
+    <div class="form-group">
+      <label for="picture">Image</label>
+      <input class="form-input" type="file" name="picture" id="picture" required />
+    </div>
+
+    <input type="submit" class="btn" value="Add Image" />
+  </form>
+
+  <div id="no-img-msg">No image available.</div>
+
+  <div id="gallery-comment">
+    <div id="gallery">
+      <div class="prev-arrow arrow"></div>
+      <div id="gallery-content">
+      </div>
+      <div class="next-arrow arrow"></div>
+    </div>
+  
+    <button class="btn" id="delete-btn">Delete Current Image</button>
+  
+    <form id="add-comment-form">
+      <div class="form-group">
+        <label for="comment">Comment</label>
+        <textarea class="form-input" rows="5" id="comment" placeholder="Enter your comment" required></textarea>
+      </div>
+      <input type="submit" class="btn" value="Add Comment" />
+    </form>
+  
+    <h2>Comments</h2>
+    <div id="comments">
+    </div>
+    <div class="comment-arrows">
+      <div class="prev-comment comment-arrow"></div>
+      <div class="next-comment comment-arrow"></div>
+    </div>
+    <div id="no-comments-msg">No comments for this image.</div>
+  </div>
+
+  <footer>
+    <a href='/credits.html'>credits</a>
+  </footer>
+
+  <script src="js/api.js"></script>
+  <script src="js/script.js"></script>
+  <!-- <script src="js/login.js"></script> -->
+</body>
+</html>

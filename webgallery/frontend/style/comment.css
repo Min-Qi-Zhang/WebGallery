@@ -1,0 +1,77 @@
+#comments {
+  text-align: center;
+  margin: auto;
+  width: 800px;
+}
+
+.comment {
+  text-align: left;
+  display: block;
+  padding: 10px 40px;
+  margin: 10px;
+  border: 2px solid lightgray;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+p {
+  font-size: 16px;
+}
+
+.main-content {
+  flex: 1;
+}
+
+.comment-author {
+  font-weight: bold;
+}
+
+.comment-date {
+  color: gray;
+}
+
+.delete-icon {
+  background-image: url('../media/trash.png');
+  width: 30px;
+  height: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 75%;
+  text-align: right;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.delete-icon:hover {
+  opacity: 0.4;
+}
+
+.comment-arrows {
+  text-align: center;
+  margin: auto;
+  width: 300px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.comment-arrow {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+}
+
+.prev-comment {
+  background-image: url("../media/right-arrow.png");
+  transform: scaleX(-1);
+}
+
+.next-comment {
+  background-image: url("../media/right-arrow.png");
+}
